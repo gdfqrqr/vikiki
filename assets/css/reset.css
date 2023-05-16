@@ -15,7 +15,7 @@
 html,
 body {
     height: 100%;
-
+    line-height: 1;
 }
 
 img,
@@ -51,7 +51,6 @@ ul {
 
 /* body */
 body{
-    font-family: "TTHoves", "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
-
-
+    font-family: 'Suisseintl',sans-serif;
+    font-size: 14px;
 }

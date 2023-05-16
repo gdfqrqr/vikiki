@@ -1,3 +1,22 @@
-@import './reset.css';
-@import './common.css';
-@import './font.css';
+@import './reset.css'; @import './common.css'; @import './font.css'; .header { padding: 1.2vw; position: fixed; width: 100%; mix-blend-mode: difference; z-index: 10; } 
+.header .group-gnb { display: flex; justify-content: space-between; } 
+.header .gnb-list .gnb-item a { color: #fff; font-size: 1vw; font-weight: 400; text-transform: uppercase; line-height: 1.2vw; display: block; } 
+.header .gnb-list.sns { flex-direction: column; justify-content: flex-start; align-items: flex-end; display: flex; gap: 0.2vw; } 
+.header .gnb-list.sns .gnb-item { border: 1.5px solid #fff; border-radius: 20vw; padding: 0 1.5vw; } 
+.header .gnb-list.sns .gnb-item a { line-height: 1vw; } 
+
+/* footer */
+.footer { padding: 12vw 1.2vw 1.2vw; background: #000; color: #fff; } 
+.footer .top-wrap { display: flex; justify-content: center; padding-bottom: 8vw; } 
+.footer .top-wrap a { color: #fff; letter-spacing: 0; text-transform: uppercase; border: 1.5px solid #fff; border-radius: 20vw; padding: 0 1.5vw; font-size: 1vw; font-weight: 400; } 
+.footer .mail-wrap { align-items: center; display: flex; flex-direction: column; } 
+.footer .mail-wrap p { color: #fff; text-transform: uppercase; align-items: center; font-family: 'Suisseintl', sans-serif; font-size: 1vw; font-weight: 400; line-height: 1vw; display: flex; } 
+.footer .mail-wrap a { color: #fff; font-family: Tobias, sans-serif; font-size: 5vw; font-weight: 300; line-height: 5.6vw; border-bottom: 1px solid #fff; letter-spacing: -.2vw; } 
+
+.footer .sns-wrap { display: flex; justify-content: space-between; } 
+.footer .sns-wrap .sns-box { color: #fff; letter-spacing: -.3vw; text-transform: uppercase; font-family: 'Suisseintl', sans-serif; font-size: 6vw; font-weight: 600; line-height: 6vw; width: 30%;} 
+.footer .copy-wrap {display: flex; justify-content: space-between; } 
+.footer .copy-wrap .copy-box { width: 30%;} 
+
+.footer .sns-box.mid, .footer .copy-box.mid {display: flex; justify-content: center;}
+.footer .sns-box.last, .footer .copy-box.last {display: flex; justify-content: flex-end; text-align: right;}
