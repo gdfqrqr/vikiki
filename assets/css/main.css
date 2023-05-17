@@ -1,5 +1,5 @@
 
-.sc-visual { background: #000; height: 100vh; color: #fff; padding: 1.2vw 1.2vw 1.6vw; display: flex; flex-direction: column; position: fixed; top: 0; left: 0; right: 0; } 
+.sc-visual { background: #000; height: 100vh; color: #fff; padding: 1.2vw 1.2vw 1.6vw; display: flex; flex-direction: column; } 
 .sc-visual .title-wrap { } 
 .sc-visual .title-wrap h2 { color: #fff; text-align: center; letter-spacing: -.5vw; text-transform: uppercase; justify-content: center; align-items: center; font-size: 14vw; font-weight: 600; line-height: 10.6vw; display: flex; } 
 .sc-visual .img-area { padding-top: 0.5vw; } 
@@ -13,7 +13,7 @@
 .sc-visual .text-box.last { width: 50%; } 
 
 /* intro */
-.sc-intro { background-color: #fff; border-radius: 4vw; padding: 2.4vw; position: relative; top: 100vh; z-index: 1; } 
+.sc-intro { background-color: #fff; border-radius: 4vw; padding: 2.4vw; position: relative; z-index: 1; } 
 .sc-intro .title-area { display: grid; grid-template-columns: repeat(2, 1fr); } 
 .sc-intro .title-area .title-box { display: flex; justify-content: space-between; margin-right: 2vw; } 
 .sc-intro .title-box span { color: #000; letter-spacing: -.3vw; font-family: 'Suisseintl', sans-serif; font-size: 5vw; font-weight: 400; line-height: 4vw; } 
