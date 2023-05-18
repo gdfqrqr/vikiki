@@ -76,10 +76,103 @@
 .sc-awards .title-wrap h2 { font-family: 'Suisseintl', sans-serif; font-size: 14vw; font-weight: 600; letter-spacing: -.5vw; color: #fff; } 
 .sc-awards .awards-wrap { display: flex; } 
 .sc-awards .awards-wrap .awards-box { width: 50%; } 
+.sc-awards .awards-box .awards-item { position: relative; } 
 .sc-awards .awards-box img { width: 40vw; border-radius: 3vw; position: relative; } 
+.sc-awards .awards-item.item-01 { } 
+.sc-awards .awards-item.item-02 { left: 13vw; } 
+.sc-awards .awards-item.item-03 { right: -6vw; } 
+.sc-awards .awards-item.item-04 { top: 20vw; left: 8vw; } 
+.sc-awards .awards-item.item-05 { top: 0; left: 30vw; } 
+.sc-awards .awards-item.item-06 { top: 8vw; left: -12vw; } 
+.sc-awards .awards-item.item-07 { left: 8vw; } 
+
 
 /* contact */
 .sc-contact { background-color: #000; padding: 5.2vw 1.2vw 1.2vw; display: flex; flex-direction: column; } 
 .sc-contact .title-wrap { display: flex; justify-content: space-between; } 
 .sc-contact .title-wrap h2 { color: #fff; letter-spacing: -.5vw; text-transform: uppercase; font-family:' Suisseintl', sans-serif; font-size: 14vw; font-weight: 600; line-height: 10.6vw; } 
 .sc-contact .title-wrap img { width: 43%; margin-top: 1vw; border-radius: 3vw; } 
+
+
+
+
+
+
+/* media */
+@media (max-width:991px){
+ .sc-visual { padding: 0 2.4vw 2vw; } 
+.sc-visual .title-wrap h2 { font-size: 17vw; line-height: 14vw; } 
+.sc-visual .img-area .img-list { grid-template-columns: repeat(8,1fr); } 
+.sc-visual .img-list .img-item img { width: 11.6vw; height: 16vw; border-radius: 2.5vw; } 
+.sc-visual .img-list .img-item.none { display: none; } 
+
+.sc-visual .text-wrap { flex-direction: column; align-items: center; } 
+.sc-visual .text-box.last { width: 100%; } 
+.sc-visual .text-box h3 { text-align: center; font-size: 8vw; line-height: 6.5vw; letter-spacing: -.4vw; } 
+.sc-visual .text-box p { display: none; } 
+
+.sc-intro { padding-bottom: 0; border-radius: 5vw; } 
+.sc-intro .title-area { display: unset; } 
+.sc-intro .title-area .title-wrap { display: none; } 
+.sc-intro .text-item strong { text-align: left; letter-spacing: -.4vw; font-size: 8vw; line-height: 6.5vw; } 
+.sc-intro .text-item p { letter-spacing: -.4vw; font-size: 8vw; line-height: 6.5vw; } 
+.sc-intro .text-item p.none { display: none; } 
+.sc-intro .text-wrap .text-item2 { margin: 4vw 6vw 0; } 
+.sc-intro .text-wrap .text-item2 p { font-size: 2vw; line-height: 2vw; } 
+
+.sc-intro .sc-intro2 { height: auto; } 
+.sc-intro .sc-intro2 .img-area { padding: 0 10.6vw; height: auto; } 
+.sc-intro .sc-intro2 .img-wrap { height: 20vw; } 
+.sc-intro .sc-intro2 .img-box img { width: 8vw; height: 10vw; border-radius: 1.5vw; } 
+.sc-intro .sc-intro2 .img-box.none { display: none; } 
+.sc-intro .sc-intro2 .fixed-wrap { position: static; margin-top: 24vw; } 
+.sc-intro .sc-intro2 .fixed-wrap span { font-size: 8vw; line-height: 6.5vw; } 
+
+.sc-slide .slide-wrap.slide-01 { top: unset; overflow: auto; } 
+.sc-slide .slide-wrap.slide-02 { top: -12vw; } 
+.sc-slide .slide-wrap.slide-03 { top: -24vw; } 
+.sc-slide .slide-wrap.slide-04 { top: -36vw; } 
+.sc-slide .slide-wrap h2 { position: absolute; left: 50%; transform: translateX(-50%); } 
+
+.sc-awards { top: -48vw; position: relative; padding: 2.4vw 2.4vw 0; overflow: hidden; } 
+.sc-awards .scroll-area { text-align: right; } 
+.sc-awards .scroll-wrap { width: 100%; } 
+.sc-awards .sub-wrap .sub { text-align: right; line-height: 2vw; font-size: 2vw; margin-bottom: 2vw; } 
+.sc-awards .scroll-list .scroll-item { letter-spacing: -.4vw; font-size: 8vw; line-height: 6.5vw; display: block; } 
+.sc-awards .play-area .title-wrap { justify-content: flex-start; margin-top: 16vw; } 
+.sc-awards .title-wrap h2 { font-size: 2vw; line-height: 2vw; text-align: left; font-weight: 400; letter-spacing: 0; } 
+
+.sc-awards .awards-wrap { display: block; } 
+.sc-awards .awards-item { width: 80vw; } 
+.sc-awards .awards-item.item-02 { top: -20vw; } 
+.sc-awards .awards-item.item-03 { top: 10vw; } 
+.sc-awards .awards-item.item-04 { top: 0; left: -8vw; z-index: 1; } 
+.sc-awards .awards-item.item-05 { top: -10vw; } 
+.sc-awards .awards-item.item-06 { } 
+.sc-awards .awards-item.item-07 { } 
+.sc-awards .awards-item.item-09 { top: 25vw; } 
+.sc-awards .awards-item img { width: 100%; } 
+.sc-awards .sub .none { display: none; } 
+.sc-awards .scroll-area .scroll-box.none { display: none; } 
+.sc-awards .awards-box .awards-item.none { display: none; } 
+
+.sc-contact { margin-top: -52vw; } 
+.sc-contact .title-wrap { align-items: center; display: flex; flex-direction: column; } 
+.sc-contact .title-wrap h2 { font-size: 17vw; line-height: 14vw; } 
+.sc-contact .title-wrap img { display: none; } 
+ }
+
+@media (max-width:767px){
+ .sc-visual { height: auto; padding-bottom: 13vw; } 
+ .sc-visual .text-wrap { margin-top: 24vw; } 
+ .sc-visual .text-box h3 { font-size: 10vw; line-height: 8vw; } 
+ .sc-intro { top: -10vw; } 
+ .sc-intro .img-wrap.none { display: none; } 
+ .sc-intro .text-item strong, .sc-intro .text-item p { font-size: 10vw; line-height: 8vw; } 
+ .sc-intro .text-item2 p { font-size: 14px; line-height: 14px; } 
+ .sc-intro .text-item2 .none { display: none; } 
+ .sc-intro .sc-intro2 .img-area { padding: 0; } 
+ .sc-intro .sc-intro2 .img-wrap { height: 30vw; padding:auto 3vw; } 
+ .sc-intro .sc-intro2 .img-box img { width: 12vw; height: 16vw; border-radius: 2.5vw; } 
+ .sc-intro .sc-intro2 .fixed-wrap span { font-size: 10vw; line-height: 8vw; } 
+ }
