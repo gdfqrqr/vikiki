@@ -1,5 +1,6 @@
-@import './reset.css'; @import './common.css'; @import './font.css'; .wrapper { overflow-x: hidden; } 
-.header { padding: 1.2vw; position: fixed; width: 100%; mix-blend-mode: difference; z-index: 10; } 
+@import './reset.css'; @import './common.css'; @import './font.css'; 
+/* .wrapper { overflow-x: hidden; }  */
+.header { padding: 1.2vw; position: fixed; width: 100%; mix-blend-mode: difference; z-index: 10; top: 0; } 
 .header .group-gnb { display: flex; justify-content: space-between; } 
 .header .gnb-list .gnb-item a { color: #fff; font-size: 1vw; font-weight: 400; text-transform: uppercase; line-height: 1.2vw; display: block; } 
 .header .gnb-list.sns { flex-direction: column; justify-content: flex-start; align-items: flex-end; display: flex; gap: 0.2vw; } 
