@@ -8,7 +8,7 @@
 .header .gnb-list.sns .gnb-item a { line-height: 1vw; } 
 
 /* footer */
-.footer { padding: 12vw 1.2vw 1.2vw; background: #000; color: #fff; } 
+.footer {position: relative; padding: 12vw 1.2vw 1.2vw; background: #000; color: #fff; } 
 .footer .top-wrap { display: flex; justify-content: center; padding-bottom: 8vw; } 
 .footer .top-wrap a { color: #fff; letter-spacing: 0; text-transform: uppercase; border: 1.5px solid #fff; border-radius: 20vw; padding: 0 1.5vw; font-size: 1vw; font-weight: 400; } 
 .footer .mail-wrap { align-items: center; display: flex; flex-direction: column; } 
@@ -25,7 +25,7 @@
 
 
 @media (max-width:991px){
- .header { padding: 1.2vw 2.4vw 0; position: static; background: #000; } 
+ .header {position: initial; padding: 1.2vw 2.4vw 0; background: #000; } 
  .header .gnb-list.menu { display: none; } 
  .header .gnb-list.sns { flex-direction: row; justify-content: space-between; width: 100%; } 
  .header .gnb-list.sns .gnb-item a { font-size: 2vw; line-height: 2vw; } 

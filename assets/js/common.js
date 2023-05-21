@@ -102,7 +102,7 @@ $(function () {
             trigger: '.sc-slide',
             start: '0% -100%',
             end: '100% 100%',
-            markers: true,
+            // markers: true,
             scrub: 1
         },
     })
@@ -113,47 +113,190 @@ $(function () {
             scale: 1.3
         }, 'a')
         .to('.sc-slide .slide-02', {
-            top: '90px'
+            top: '7vw'
         }, 'a')
 
         .addLabel('b')
         .to('.sc-slide .slide-02 img', {
             scale: 1.3
-        },'b')
+        }, 'b')
         .to('.sc-slide .slide-03', {
-            top: '170px'
-        },'b')
+            top: '15vw'
+        }, 'b')
 
         .addLabel('c')
         .to('.sc-slide .slide-03 img', {
             scale: 1.3
-        },'c')
+        }, 'c')
         .to('.sc-slide .slide-04', {
-            top: '250px'
-        },'c')
+            top: '22.8vw'
+        }, 'c')
 
         .to('.sc-slide .slide-04 img', {
             scale: 1.3
         })
 
-/*
-*
-*
-*
-*
-*/ 
+    
+    
+        /*
+     *
+     *
+     * 문자 가로로 나타나기
+     *
+     */
+        gsap.set('.sc-awards .em-list .em-box',{
+            opacity:0,
+            xPercent:10
+        })
+
+        gsap.to('.sc-awards .em-list .em-box', {
+            scrollTrigger: {
+                trigger: '.sc-awards .em-list',
+                start: '0% 100%',
+                end: '100% +=1000px',
+                // markers: true,
+                scrub: 0
+            },
+            opacity:1,
+            xPercent:0,
+            stagger:0.2
+        })
+
+    
+    
+                /*
+     *
+     *
+     * 문자 세로 슬라이드
+     *
+     */
+    gsap.to('.sc-awards .scroll-area .scroll-box .absolute-wrap',{ 
+        scrollTrigger:{
+            trigger:'.sc-awards .scroll-area',
+            start:"0% 50%",
+            end:"100% 50%",
+            // markers:true,
+            scrub:0,
+        },
+        top:'100%',
+        yPercent:-100,
+        ease:'none'
+    })
+
+    $('.sc-awards .scroll-wrap .scroll-list').each(function (idx,ele){
+        
+        fontClass = ['a1', 'a2', 'a3']
+        fontText = ['key','special','crush']
+        fontText2 = ['skils','expertise','things']
+
+        ScrollTrigger.create({
+            trigger: ele,
+            start: '0% 50%',
+            end: '100% 50%',
+            // markers: true,
+            scrub: 0,
+            onEnter:function(){
+                $('.sc-awards .absolute-wrap p').text(fontText[idx]).removeClass('a1 a2 a3').addClass(fontClass[idx]);
+                $('.sc-awards .absolute-wrap.text2 p').text(fontText2[idx])
+            },
+            onEnterBack:function(){
+                $('.sc-awards .absolute-wrap p').text(fontText[idx]).removeClass('a1 a2 a3').addClass(fontClass[idx]);
+                $('.sc-awards .absolute-wrap.text2 p').text(fontText2[idx]);
+            },
+        })
+    })
 
 
 
 
+    /*
+     *
+     *
+     * playground.
+     *
+     */
+
+    /*h2 text*/ 
+    const playMotion = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.sc-awards .title-wrap',
+            start: '20% 0%',
+            end: '100% 100%',
+            // markers: true,
+            scrub:1,
+        },
+    })
+
+    playMotion
+        .to('.sc-awards .title-wrap h2', {
+            scale: 0.5
+        })
 
 
+    /*awards-wrap*/ 
+    gsap.set('.sc-awards .awards-item',{
+        scale:0
+    })
+
+    $('.sc-awards .awards-item').each(function(idx,ele){
+        const playMotion2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ele,
+                start: '0% 100%',
+                end: '100% 100%',
+                // markers: true,
+                scrub: 1,
+            },
+        })
+        playMotion2
+        .to(ele, {
+            scale: 1,
+        })
+    })
 
 
+    /*
+    *
+    *
+    * 글자 쪼개서 나타나기
+    *
+    * */ 
+    const letTxt = new SplitType('.sc-contact .title-wrap h2', {type:'words, chars'})
 
+    gsap.set(letTxt.chars,{
+        opacity:0,
+        xPercent:100
+    })
 
+    $('.sc-contact .title-wrap h2').each(function(idx,ele){
+        gsap.to($(this).find('.char'),{
+            scrollTrigger: {
+                trigger: '.sc-contact .title-wrap',
+                start: '20% 50%',
+                end: '100% 100%',
+                // markers: true,
+                scrub:1,
+            },
+                opacity:1,
+                xPercent:0,
+                stagger:0.01
+        })
+    })
 
+    gsap.set('.sc-contact .title-wrap .img-box img',{
+        scale:0,
+    })
 
+    gsap.to('.sc-contact .title-wrap .img-box img',{
+        scrollTrigger: {
+            trigger: '.sc-contact',
+            start: '0% 60%',
+            end: '100% 100%',
+            // markers: true,
+            scrub:0,
+        },
+        scale:1,
+    })
 
 
 })
