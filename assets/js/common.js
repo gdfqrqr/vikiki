@@ -18,6 +18,9 @@ $(function () {
         })
     })
 
+
+
+
     /*
      *
      * intro2 고정모션 timeline
@@ -87,14 +90,13 @@ $(function () {
         })
 
 
+
+
     /*
      * slide고정모션
      *
      * 
      */
-
-
-
     const slidePin = gsap.timeline({
         scrollTrigger: {
             trigger: '.sc-slide',
@@ -133,6 +135,20 @@ $(function () {
         .to('.sc-slide .slide-04 img', {
             scale: 1.3
         })
+
+/*
+*
+*
+*
+*
+*/ 
+
+
+
+
+
+
+
 
 
 
