@@ -9,7 +9,7 @@
 
 /* footer */
 .footer {position: relative; padding: 12vw 1.2vw 1.2vw; background: #000; color: #fff; } 
-.footer .top-wrap { display: flex; justify-content: center; padding-bottom: 8vw; } 
+.footer .top-wrap {position: absolute; top: 20%; left: 50%; transform: translateX(-50%);} 
 .footer .top-wrap a { color: #fff; letter-spacing: 0; text-transform: uppercase; border: 1.5px solid #fff; border-radius: 20vw; padding: 0 1.5vw; font-size: 1vw; font-weight: 400; } 
 .footer .mail-wrap { align-items: center; display: flex; flex-direction: column; } 
 .footer .mail-wrap p { color: #fff; text-transform: uppercase; align-items: center; font-family: 'Suisseintl', sans-serif; font-size: 1vw; font-weight: 400; line-height: 1vw; display: flex; } 
@@ -30,7 +30,7 @@
  .header .gnb-list.sns { flex-direction: row; justify-content: space-between; width: 100%; } 
  .header .gnb-list.sns .gnb-item a { font-size: 2vw; line-height: 2vw; } 
  .footer { padding-top: 20vw; } 
- .footer .top-wrap { padding-bottom: 20vw; } 
+ .footer .top-wrap {  } 
  .footer .top-wrap a { font-size: 2vw; line-height: 2vw; } 
  .footer .mail-wrap { margin-bottom: 4vw; } 
  .footer .mail-wrap p { font-size: 2vw; line-height: 2vw; } 
