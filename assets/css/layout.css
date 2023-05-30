@@ -1,5 +1,6 @@
-@import './reset.css'; @import './common.css'; @import './font.css'; .wrapper { overflow-x: hidden; } 
-.header { padding: 1.2vw; position: fixed; width: 100%; mix-blend-mode: difference; z-index: 10; } 
+@import './reset.css'; @import './common.css'; @import './font.css'; 
+/* .wrapper { overflow-x: hidden; }  */
+.header { padding: 1.2vw; position: fixed; width: 100%; mix-blend-mode: difference; z-index: 10; top: 0; } 
 .header .group-gnb { display: flex; justify-content: space-between; } 
 .header .gnb-list .gnb-item a { color: #fff; font-size: 1vw; font-weight: 400; text-transform: uppercase; line-height: 1.2vw; display: block; } 
 .header .gnb-list.sns { flex-direction: column; justify-content: flex-start; align-items: flex-end; display: flex; gap: 0.2vw; } 
@@ -7,8 +8,8 @@
 .header .gnb-list.sns .gnb-item a { line-height: 1vw; } 
 
 /* footer */
-.footer { padding: 12vw 1.2vw 1.2vw; background: #000; color: #fff; } 
-.footer .top-wrap { display: flex; justify-content: center; padding-bottom: 8vw; } 
+.footer {position: relative; padding: 12vw 1.2vw 1.2vw; background: #000; color: #fff; } 
+.footer .top-wrap {position: absolute; top: 20%; left: 50%; transform: translateX(-50%);} 
 .footer .top-wrap a { color: #fff; letter-spacing: 0; text-transform: uppercase; border: 1.5px solid #fff; border-radius: 20vw; padding: 0 1.5vw; font-size: 1vw; font-weight: 400; } 
 .footer .mail-wrap { align-items: center; display: flex; flex-direction: column; } 
 .footer .mail-wrap p { color: #fff; text-transform: uppercase; align-items: center; font-family: 'Suisseintl', sans-serif; font-size: 1vw; font-weight: 400; line-height: 1vw; display: flex; } 
@@ -24,12 +25,12 @@
 
 
 @media (max-width:991px){
- .header { padding: 1.2vw 2.4vw 0; position: static; background: #000; } 
+ .header {position: initial; padding: 1.2vw 2.4vw 0; background: #000; } 
  .header .gnb-list.menu { display: none; } 
  .header .gnb-list.sns { flex-direction: row; justify-content: space-between; width: 100%; } 
  .header .gnb-list.sns .gnb-item a { font-size: 2vw; line-height: 2vw; } 
  .footer { padding-top: 20vw; } 
- .footer .top-wrap { padding-bottom: 20vw; } 
+ .footer .top-wrap {  } 
  .footer .top-wrap a { font-size: 2vw; line-height: 2vw; } 
  .footer .mail-wrap { margin-bottom: 4vw; } 
  .footer .mail-wrap p { font-size: 2vw; line-height: 2vw; } 
