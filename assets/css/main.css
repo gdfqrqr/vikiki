@@ -166,13 +166,14 @@
  .sc-visual { height: auto; padding-bottom: 13vw; } 
  .sc-visual .text-wrap { margin-top: 24vw; } 
  .sc-visual .text-box h3 { font-size: 10vw; line-height: 8vw; } 
- .sc-intro { top: -10vw; } 
+ .sc-intro { top: -10vw; padding-top: 1vw; } 
  .sc-intro .img-wrap.none { display: none; } 
  .sc-intro .text-item strong, .sc-intro .text-item p { font-size: 10vw; line-height: 8vw; } 
- .sc-intro .text-item2 p { font-size: 14px; line-height: 14px; } 
+ .sc-intro .text-wrap .text-item2 p { font-size: 14px; line-height: 14px; } 
  .sc-intro .text-item2 .none { display: none; } 
  .sc-intro .sc-intro2 .img-area { padding: 0; } 
  .sc-intro .sc-intro2 .img-wrap { height: 30vw; padding:auto 3vw; } 
  .sc-intro .sc-intro2 .img-box img { width: 12vw; height: 16vw; border-radius: 2.5vw; } 
  .sc-intro .sc-intro2 .fixed-wrap span { font-size: 10vw; line-height: 8vw; } 
+ .sc-slide .slide-wrap h2 {font-size: 10vw; line-height: 8vw;margin-top: 3vw;}
  }
