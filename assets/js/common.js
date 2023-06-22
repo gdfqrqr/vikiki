@@ -204,14 +204,6 @@ $(function () {
 
             },
 
-            "(max-width: 991px)": function() {
-                    
-            },
-            
-            "(max-width: 767px)": function() {
-                    
-            },
-            
             "all": function() {
 
                 /*
@@ -256,6 +248,7 @@ $(function () {
                     xPercent:0,
                     stagger:0.2
                 })
+                
                 /*
                 *
                 *

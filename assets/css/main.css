@@ -65,7 +65,7 @@
 .sc-awards .sub-wrap { margin: 1vw; padding-top: 2.4vw; } 
 .sc-awards .sub-wrap .sub { font-size: 1vw; font-weight: 400; } 
 .sc-awards .em-list { padding-bottom: 16vw; overflow-x: hidden; } 
-.sc-awards .em-list .em-box { font-size: 15vw; line-height: 11.1vw; letter-spacing: -.5vw; font-weight: 600; } 
+.sc-awards .em-list .em-box {display: block; font-size: 15vw; line-height: 11.1vw; letter-spacing: -.5vw; font-weight: 600; } 
 .sc-awards .em-box a { position: relative; } 
 .sc-awards .em-box sub { font-size: 1vw; font-weight: 400; line-height: 1vw; position: absolute; letter-spacing: 0; } 
 .sc-awards .scroll-area { position: relative; display: flex; align-items: flex-start; color: #000; letter-spacing: -.3vw; font-family: 'Suisseintl', sans-serif; font-size: 5vw; font-weight: 400; line-height: 4vw; padding-left: 1.2vw } 
@@ -100,12 +100,12 @@
 
 
 /* contact */
-.sc-contact { position: relative; background-color: #000; padding: 0vw 1.2vw 1.2vw; display: flex; flex-direction: column; } 
-.sc-contact .title-wrap { display: flex; justify-content: space-between; overflow: hidden; } 
+.sc-contact { position: relative; background-color: #000; padding: 1.2vw 1.2vw 1.2vw; display: flex; flex-direction: column; } 
+.sc-contact .title-wrap { display: flex; justify-content: space-between; } 
 .sc-contact .title-wrap h3 { color: #fff; letter-spacing: -.5vw; text-transform: uppercase; font-family:' Suisseintl', sans-serif; font-size: 14vw; font-weight: 600; line-height: 10.6vw; } 
 
 .sc-contact .title-wrap:last-child .img-box { width: 43%; } 
-.sc-contact .title-wrap img { width: 100%; margin-top: 1vw; border-radius: 3vw; } 
+.sc-contact .title-wrap img { width: 100%; margin-top: 1vw; border-radius: 3vw; transform-origin: left top;} 
 
 
 
