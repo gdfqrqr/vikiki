@@ -100,7 +100,7 @@
 
 
 /* contact */
-.sc-contact { position: relative; background-color: #000; padding: 1.2vw 1.2vw 1.2vw; display: flex; flex-direction: column; } 
+.sc-contact { position: relative; background-color: #000; padding: 1.2vw 1.2vw 1.2vw; display: flex; flex-direction: column; overflow-x: hidden; } 
 .sc-contact .title-wrap { display: flex; justify-content: space-between; } 
 .sc-contact .title-wrap h3 { color: #fff; letter-spacing: -.5vw; text-transform: uppercase; font-family:' Suisseintl', sans-serif; font-size: 14vw; font-weight: 600; line-height: 10.6vw; } 
 
