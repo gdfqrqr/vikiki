@@ -37,7 +37,7 @@ $(function () {
             })
 
         
-            gsap.to('.sc-visual .img-list .img-item', {
+            gsap.to('.sc-visual .img-area .img-item', {
                 opacity:1,
                 xPercent:0,
                 stagger:0.07
@@ -335,17 +335,8 @@ $(function () {
                     },
                     scale:1,
                 })
-            
-            
             }
-    
     });
-
-
-
-
-
-
 })
 
 
